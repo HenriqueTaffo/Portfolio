@@ -1,0 +1,123 @@
+/*remover scrollbar*/
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body, ul, li, p{
+
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+/*Span logo ficticio*/
+
+.logo{
+  border: 1px solid black;
+  padding: 10px;
+}
+
+/*retirar estilo de links*/
+
+a{
+  text-decoration: none;
+  color: #585858;
+}
+
+
+/* determina que as imagens só darão display a 100% do container*/
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+/*section*/
+
+section{
+  margin: 15px;
+}
+
+/*icones redes sociais*/
+
+.fab{
+  font-size: 20px;
+}
+
+/* icones de usuários */
+
+.fa-user{
+  margin-right: 10px;
+  border-radius: 28px;
+  background: lightgray;
+  padding: 15px;
+  margin-bottom: 5px;
+}
+
+#user-2{
+  margin-right: 10px;
+  border-radius: 28px;
+  background: transparent;
+  padding: 15px;
+  margin-bottom: 5px;
+}
+
+/* sessão de destaques*/
+
+#destaques{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+/* sessão de avaliações*/
+
+#avaliacoes{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+
+
+/* sessão de making of*/
+
+#entrevistas{
+  background: lightgray;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+
+
+
+/*estilizando o footer*/
+
+footer{
+  display: flex;
+  width: 100%;
+  background:lightgray;
+  margin-top: 5%;
+  justify-content: center;
+  text-align: center;
+  flex-flow: column;
+}
+
+
+.flex-footer{
+
+  display: flex;
+  justify-content: space-around;
+  color: black;
+  margin: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+
+} 
+
+
+

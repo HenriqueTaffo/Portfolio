@@ -1,0 +1,134 @@
+/*slider*/
+
+* {box-sizing:border-box}
+
+/* container do Slideshow  */
+.slideshow-container {
+    justify-content: center;
+  background: #c3c3c3;
+  padding: 5%;
+  display: flex;
+}
+
+/*tamanho das imagens no slider*/
+
+.slideshow-container img{
+  max-width: 100%;
+  display: block;
+  width: 824px;
+  height: 290px;
+}
+
+/* Por Padrão, deixa as imagens escondidas */
+.mySlides {
+  display: none;
+}
+
+/* botões para passar as imagens */
+.anterior, .proximo {
+  cursor: pointer;
+  position: absolute;
+  top: 35%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  display: none;
+}
+
+
+/* posicionar o botão próximo para a direita */
+.proximo {
+  right: 5%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* posicionar o botão anterior para a esquerda */
+.anterior {
+  left: 5%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* efeito de troca de cor com o passar do mouse */
+.prev:hover, .next:hover {
+  background: white;
+}
+
+/* Texto de Legenda */
+.text {
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Numerador */
+.numerador {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+}
+
+/* Bullets para passar imagem*/
+.dots{
+  text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: -3%;
+    margin-bottom: 5%;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  display: block;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* animação de Fading  */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* sinopses */
+
+.container-sinopse {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 1%;
+  width: 35%;
+}
